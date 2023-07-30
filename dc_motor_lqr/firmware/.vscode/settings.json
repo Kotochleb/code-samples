@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "int32.h": "c",
+        "pico_uart_transports.h": "c",
+        "limits": "c",
+        "algorithm": "c",
+        "hardware.h": "c",
+        "float64.h": "c",
+        "rclc.h": "c"
+    }
+}

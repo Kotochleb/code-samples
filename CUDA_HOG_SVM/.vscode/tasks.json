@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run CUDA C++",
+            "type": "shell",
+            "command": "nvcc",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": "build",
+        },
+        {
+            "label": "Debug CUDA C++",
+            "type": "shell",
+            "command": "nvcc",
+            "args": [
+                "-G",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": "build",
+        }
+    ]
+}
